@@ -1,11 +1,24 @@
-body {
-    background: rgba(255, 0, 0, 0.438);
+body,
+html {
+    background: rgb(0, 0, 0);
+    height: 50%;
 }
 
 .header h1 {
     text-align: center;
+    color: rgba(255, 0, 0, 0.616);
 }
 
 .header h4 {
     text-align: center;
+    color: rgba(255, 0, 0, 0.616);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
 }
