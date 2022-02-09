@@ -18,7 +18,7 @@ html {
 
 .hero-text {
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     color: #135a13;
     position: absolute;
     top: 50%;
@@ -26,7 +26,7 @@ html {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-shadow: -40px 40px 2px #1a1a18;
-    color: #fff;
+    color: rgb(247, 8, 8);
     margin: 40px auto;
     background-color: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -35,6 +35,7 @@ html {
     padding: 32px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .u-section-1 {
