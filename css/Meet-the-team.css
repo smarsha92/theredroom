@@ -17,25 +17,30 @@ html {
 }
 
 .hero-text {
-    text-align: center;
-    font-size: 16px;
-    color: #135a13;
     position: absolute;
-    top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-shadow: -40px 40px 2px #1a1a18;
-    color: rgb(247, 8, 8);
-    margin: 40px auto;
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: 600px;
-    border-radius: 15px;
-    padding: 32px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    font-family: 'Courier New', Courier, monospace;
+    transform: translateX(-50%);
+    width: 90%;
+    bottom: 0;
+    padding: 1.5em 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    color: red;
+}
+
+.hero-text a {
+    font-size: 0.889rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: .555em 1.5em;
+    display: block;
+    margin-top: .5em;
+    border-radius: 2.5em;
+    background-color: #fff;
+    color: #1f1f1f;
+    transition: .25s transform;
 }
 
 .u-section-1 {
