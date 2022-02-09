@@ -1,0 +1,92 @@
+.u-overlap.u-overlap-transparent .u-header,
+.u-image,
+.u-gradient {
+    color: #111;
+}
+
+.u-image,
+.u-background-effect-image,
+.u-video-poster {
+    background: (cover) no-repeat 50% 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.u-align-center {
+    text-align: center;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.u-clearfix::after,
+.u-clearfix::before {
+    content: '';
+    display: table;
+}
+
+.u-sheet:not(.u-image):not(.u-video)>* {
+    pointer-events: initial;
+}
+
+.u-section-2 .u-list-1 {
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    height: auto;
+    margin: 20px auto 0 0;
+    min-height: 749px;
+    border: 10px solid saddlebrown;
+}
+
+.u-section-2 .u-container-layout-1 {
+    padding: 30px;
+}
+
+.u-font-oswald.u-custom-font {
+    font-family: Oswald, sans-serif!important;
+}
+
+.u-body h1,
+.u-body h2,
+.u-body h3,
+.u-body h4,
+.u-body h5,
+.u-body h6 {
+    padding: 0;
+}
+
+.u-text {
+    position: relative;
+    word-wrap: break-word;
+}
+
+.u-valign-middle>*,
+.u-valign-top>*,
+.u-valign-bottom>* {
+    flex-shrink: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.u-font-pt-sans.u-custom-font {
+    font-family: 'PT Sans', sans-serif!important;
+}
+
+.u-text-grey-30,
+a.u-button-style.u-text-grey-30,
+a.u-button-style.u-text-grey-30[class*="u-border-"] {
+    color: #c53636!important;
+}
+
+
+/* Place text in the middle of the image */
