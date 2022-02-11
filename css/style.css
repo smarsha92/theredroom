@@ -1,5 +1,17 @@
+*,
+*:before,
+*:after {
+    border-width: 0;
+    border-style: solid;
+    border-color: #1f1f1f;
+}
+
+body,
 html {
-    background-color: #1f1f1f;
+    height: 100%;
+    margin: 0;
+    font-weight: 400;
+    line-height: 2;
 }
 
 section {
@@ -14,6 +26,41 @@ body {
     font-weight: 500;
     width: 100%;
     overflow: hidden;
+}
+
+.hero-image {
+    background-image: url(/imgs/group0.jpg);
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-text {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    top: 80%;
+    padding: 1.5em 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: red;
+}
+
+.hero-text a {
+    font-size: 0.889rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: .555em 1.5em;
+    display: block;
+    margin-top: .5em;
+    border-radius: 2.5em;
+    background-color: #fff;
+    color: #1f1f1f;
+    transition: .25s transform;
 }
 
 a {
