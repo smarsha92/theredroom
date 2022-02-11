@@ -1,10 +1,21 @@
+*,
+*:before,
+*:after {
+    border-width: 0;
+    border-style: solid;
+    border-color: #1f1f1f;
+}
+
 body,
 html {
     height: 100%;
+    margin: 0;
+    font-weight: 400;
+    line-height: 2;
 }
 
 .hero-image {
-    background-image: url(/imgs/group6.jpg);
+    background-image: url(/imgs/group0.jpg);
     background-size: cover;
     height: 100%;
     background-attachment: fixed;
@@ -12,21 +23,55 @@ html {
     background-position: center;
 }
 
-.hero-text {
+.about-section {
+    background: #ffffff;
+    padding: 7rem 1.5rem 7rem 1.5rem;
+    background-attachment: fixed;
+    transition: all 3s ease;
+}
+
+h6 {
     text-align: center;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: .75em 0;
+    text-align: center;
+    display: block;
+    margin-block-start: .83rem;
+    margin-block-end: .83rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    padding-bottom: 1em;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 2;
+    width: 100%;
+}
+
 .hero-text {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    bottom: 0;
+    top: 80%;
     padding: 1.5em 0;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    z-index: 99;
     color: red;
 }
 
@@ -44,7 +89,7 @@ html {
 }
 
 .u-section-1 {
-    background-image: url("images/default-image.jpg");
+    background-color: aquamarine;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -81,6 +126,13 @@ html {
 
 .u-section-1 .u-container-layout-2 {
     padding: 40px 20px 20px;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
 .u-section-1 .u-text-1 {
@@ -382,6 +434,9 @@ html {
 }
 
 @media (max-width: 767px) {
+    body {
+        background-color: #1f1f1f;
+    }
     .u-section-1 .u-sheet-1 {
         min-height: 1387px;
     }
@@ -425,7 +480,15 @@ html {
     }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero-image {
+        background-color: #1f1f1f;
+        background-size: cover;
+        height: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
     .u-section-1 .u-sheet-1 {
         min-height: 1358px;
     }
@@ -462,101 +525,48 @@ html {
     }
 }
 
-.u-section-1 .u-group-3,
-.u-section-1 .u-group-3:before {
-    transition-property: fill, color, background-color, stroke-width, border-style, border-width, custom-border, border-top-width, border-left-width, border-right-width, border-bottom-width, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+.u-align-center {
+    text-align: center;
 }
 
-.u-section-1 .u-group-3.u-group-3.u-group-3:hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (min-width: 1400px) {
+    .u-align-center-xxl {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-3 {
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (min-width: 1200px) {
+    .u-xl-mode .u-align-center-xl {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-3.u-group-3.u-group-3.hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .u-xxl-mode .u-align-center-xl {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-3 {
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .u-align-center-lg {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-1,
-.u-section-1 .u-group-1:before {
-    transition-property: fill, color, background-color, stroke-width, border-style, border-width, custom-border, border-top-width, border-left-width, border-right-width, border-bottom-width, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+@media (min-width: 768px) and (max-width: 991px) {
+    .u-align-center-md {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-1.u-group-1.u-group-1:hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (min-width: 576px) and (max-width: 767px) {
+    .u-align-center-sm {
+        text-align: center;
+    }
 }
 
-.u-section-1 .u-group-1 {
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-1.u-group-1.u-group-1.hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-1 {
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-2,
-.u-section-1 .u-group-2:before {
-    transition-property: fill, color, background-color, stroke-width, border-style, border-width, custom-border, border-top-width, border-left-width, border-right-width, border-bottom-width, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
-}
-
-.u-section-1 .u-group-2.u-group-2.u-group-2:hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-2 {
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-2.u-group-2.u-group-2.hover {
-    box-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    text-shadow: undefined undefined undefined rgba(var(--undefined-r), var(--undefined-g), var(--undefined-b), 0) !important;
-    border-radius: 20px !important;
-    transform: rotate(0deg) !important;
-    border-style: solid !important;
-    border-width: 0px !important;
-}
-
-.u-section-1 .u-group-2 {
-    border-style: solid !important;
-    border-width: 0px !important;
+@media (max-width: 575px) {
+    .u-align-center-xs {
+        text-align: center;
+    }
 }
